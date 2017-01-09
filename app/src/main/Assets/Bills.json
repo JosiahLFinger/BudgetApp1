@@ -11,7 +11,7 @@
     },
 
     {
-      "name": "Capital Two",
+      "name": "Barclay Card",
       "url" : "http://www.capitalone.com",
       "balanceTotal": "650",
       "balanceDue": "35",
@@ -21,7 +21,7 @@
     },
 
     {
-      "name": "Capital Three",
+      "name": "Chase",
       "url" : "http://www.capitalone.com",
       "balanceTotal": "650",
       "balanceDue": "35",

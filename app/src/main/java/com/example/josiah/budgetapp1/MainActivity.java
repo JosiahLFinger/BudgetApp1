@@ -27,18 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Create a list of bills. Populate each bill with info from file
         final ArrayList<Bill> bills = Bill.getBillsFromFile("Bills.json", this);
-        //Create a list for each bill's name
-        String[] billNames = new String[bills.size()];
-
-        for(int i = 0; i < bills.size(); i++) {
-            //Populate string list of Bill's names
-            Bill bill = bills.get(i);
-            billNames[i] = bill.name;
-            Log.d("TAG", "Bill " + (i + 1) + " name added");
-        }
-        Log.d("TAG", "Bill name list complete. " + bills.size() + " names added.");
-
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, billNames);
+        BillAdapter adapter = new BillAdapter(this, bills);
         mListView.setAdapter(adapter);
 
     }
