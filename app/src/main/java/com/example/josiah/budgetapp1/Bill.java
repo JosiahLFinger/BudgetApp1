@@ -29,7 +29,7 @@ public class Bill {
 
         try {
             //load data from file
-            String jsonString = loadJsonFromAsset("Bills.json", context);
+            String jsonString = loadJsonFromAsset(filename, context);
             JSONObject json = new JSONObject(jsonString);
             JSONArray bills = json.getJSONArray("bills");
 
